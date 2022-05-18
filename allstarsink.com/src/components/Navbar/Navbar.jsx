@@ -10,7 +10,18 @@ const Navbar = () => (
     <div className="app__navbar-logo">
       <img src={images.gericht} alt="app logo"/>
     </div>
-    
+    <ul className="app__navbar-links">
+      <li className="p__opensans"><a href="#home">Home</a> </li>
+      <li className="p__opensans"><a href="#home">Menu</a> </li>
+      <li className="p__opensans"><a href="#home">About</a> </li>
+      <li className="p__opensans"><a href="#home">Menu</a> </li>
+      <li className="p__opensans"><a href="#home">Awards</a> </li>
+      <li className="p__opensans"><a href="#home">Contact</a> </li>
+    </ul>
+    <div className="app__navbar-login">
+      <a href ="#login" className="p__opensans">log in / register</a>
+    </div>
+    <a href="/" className="p__opensans">Book Table</a>
   </nav>
 );
 
