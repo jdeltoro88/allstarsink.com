@@ -7,7 +7,10 @@ import './Navbar.css';
 
 const Navbar = () => (
   <nav className="app__navbar">
-    Navbar
+    <div className="app__navbar-logo">
+      <img src={images.gericht} alt="app logo"/>
+    </div>
+    
   </nav>
 );
 
