@@ -36,5 +36,10 @@
     color: var(--color-grey)
 }
 
+.app__navbar-login {
+    display: flex;
+    justify-coontent: flex
+}
+
 
 
