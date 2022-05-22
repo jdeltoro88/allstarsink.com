@@ -18,16 +18,16 @@ const Navbar = () => {
         <a href="#home">Home</a>{" "}
       </li>
       <li className="p__opensans">
-        <a href="#home">Other services</a>{" "}
-      </li>
-      <li className="p__opensans">
-        <a href="#home">About</a>{" "}
-      </li>
-      <li className="p__opensans">
         <a href="#home">Screen Printing</a>{" "}
       </li>
       <li className="p__opensans">
-        <a href="#home">embroidery</a>{" "}
+        <a href="#home">Embroidery</a>{" "}
+      </li>
+      <li className="p__opensans">
+        <a href="#home">Other Services</a>{" "}
+      </li>
+      <li className="p__opensans">
+        <a href="#home">about us</a>{" "}
       </li>
       <li className="p__opensans">
         <a href="#home">Contact</a>{" "}
