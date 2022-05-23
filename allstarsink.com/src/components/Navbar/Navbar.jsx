@@ -1,80 +1,80 @@
-import React from 'react';
-import { GiHamburgerMenu } from 'react-icons/gi';
-import { MdOpenInFull } from "react-icons/md";
-import images from '../../constants/images';
-
-import './Navbar.css';
+import React from "react";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { MdOutlineRestaurantMenu } from "react-icons/md";
+import images from "../../constants/images";
+import "./Navbar.css";
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = React.useState(false);
-
   return (
     <nav className="app__navbar">
       <div className="app__navbar-logo">
-        <img src={images.gericht} alt="app logo" />
+        <img src={images.gericht} alt="app__logo" />
       </div>
       <ul className="app__navbar-links">
         <li className="p__opensans">
-          <a href="#home">Home</a>{" "}
+          <a href="#home">Home</a>
         </li>
         <li className="p__opensans">
-          <a href="#home">Screen Printing</a>{" "}
+          <a href="#about">About</a>
         </li>
         <li className="p__opensans">
-          <a href="#home">Embroidery</a>{" "}
+          <a href="#menu">Menu</a>
         </li>
         <li className="p__opensans">
-          <a href="#home">Other Services</a>{" "}
+          <a href="#awards">Awards</a>
         </li>
         <li className="p__opensans">
-          <a href="#home">about</a>{" "}
-        </li>
-        <li className="p__opensans">
-          <a href="#home">Contact</a>{" "}
+          <a href="#contact">Contact</a>
         </li>
       </ul>
       <div className="app__navbar-login">
         <a href="#login" className="p__opensans">
-          log in / register
+          Log In / Registration
         </a>
         <div />
         <a href="/" className="p__opensans">
           Book Table
         </a>
       </div>
-
       <div className="app__navbar-smallscreen">
         <GiHamburgerMenu
           color="#fff"
-          fontsize={27}
+          fontSize={27}
           onClick={() => setToggleMenu(true)}
         />
-
         {toggleMenu && (
           <div className="app__navbar-smallscreen_overlay flex__center slide-bottom">
-            <MdOpenInFull
+            <MdOutlineRestaurantMenu
               fontSize={27}
               className="overlay__close"
               onClick={() => setToggleMenu(false)}
             />
             <ul className="app__navbar-smallscreen_links">
-              <li className="p__opensans">
-                <a href="#home">Home</a>{" "}
+              <li>
+                <a href="#home" onClick={() => setToggleMenu(false)}>
+                  Home
+                </a>
               </li>
-              <li className="p__opensans">
-                <a href="#home">Screen Printing</a>{" "}
+              <li>
+                <a href="#about" onClick={() => setToggleMenu(false)}>
+                  About
+                </a>
               </li>
-              <li className="p__opensans">
-                <a href="#home">Embroidery</a>{" "}
+              <li>
+                <a href="#menu" onClick={() => setToggleMenu(false)}>
+                  Menu
+                </a>
               </li>
-              <li className="p__opensans">
-                <a href="#home">other services</a>{" "}
+              <li>
+                <a href="#awards" onClick={() => setToggleMenu(false)}>
+                  Awards
+                </a>
               </li>
-              <li className="p__opensans">
-                <a href="#home">about us</a>{" "}
-              </li>
-              <li className="p__opensans">
-                <a href="#home">Contact</a>{" "}
+              <li>
+                <a href="#contact" onClick={() => setToggleMenu(false)}>
+                  Contact
+                </a>
               </li>
             </ul>
           </div>
@@ -82,6 +82,6 @@ const Navbar = () => {
       </div>
     </nav>
   );
-  };
+};
 
 export default Navbar;
