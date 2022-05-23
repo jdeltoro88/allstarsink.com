@@ -27,7 +27,7 @@ const Navbar = () => {
         <a href="#home">Other Services</a>{" "}
       </li>
       <li className="p__opensans">
-        <a href="#home">about us</a>{" "}
+        <a href="#home">about</a>{" "}
       </li>
       <li className="p__opensans">
         <a href="#home">Contact</a>{" "}
@@ -42,6 +42,7 @@ const Navbar = () => {
         Book Table
       </a>
     </div>
+    
     <div className="app__navbar-smallscreen">
       <GiHamburgerMenu color="#fff" fontsize={27} onClick={() => setToggleMenu(true)} />
       
@@ -49,24 +50,12 @@ const Navbar = () => {
       <div className="app__navbar-smallscreen_overlay flex__center slide-bottom">
         <MdOutlineRestaurantMenu fontSize={27} className="overlay__close" onClick={() => setToggleMenu(false)} />
       <ul className="app__navbar-smallscreen_links">
-        <li className="p__opensans">
-          <a href="#home">Home</a>{" "}
-        </li>
-        <li className="p__opensans">
-          <a href="#home">Screen Printing</a>{" "}
-        </li>
-        <li className="p__opensans">
-          <a href="#home">Embroidery</a>{" "}
-        </li>
-        <li className="p__opensans">
-          <a href="#home">other services</a>{" "}
-        </li>
-        <li className="p__opensans">
-          <a href="#home">about us</a>{" "}
-        </li>
-        <li className="p__opensans">
-          <a href="#home">Contact</a>{" "}
-        </li>
+        <li className="p__opensans"><a href="#home">Home</a>{" "} </li>
+        <li className="p__opensans"><a href="#home">Screen Printing</a>{" "}</li>
+        <li className="p__opensans"><a href="#home">Embroidery</a>{" "}</li>
+        <li className="p__opensans"><a href="#home">other services</a>{" "}</li>
+        <li className="p__opensans"><a href="#home">about us</a>{" "}</li>
+        <li className="p__opensans"><a href="#home">Contact</a>{" "}</li>
       </ul>
     </div>
       )}
