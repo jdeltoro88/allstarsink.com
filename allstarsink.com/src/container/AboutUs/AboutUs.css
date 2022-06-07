@@ -6,5 +6,12 @@
 .app__aboutus-overlay {
     position: absolute;
     inset: 0;
-    
+
 }
+
+.app__aboutus-overlay img {
+    width: 391px;
+    height: 415px;
+    z-index:0;
+}
+
