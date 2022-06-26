@@ -60,7 +60,7 @@
 
 }
 
-
+/*need to check this all three media queries should be max width but source code has min width on the desktop media querie*/
 @media screen and (max-width: 900px) {
     .app__aboutus-content {
         flex-direction: column;
