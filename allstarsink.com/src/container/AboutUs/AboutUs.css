@@ -56,8 +56,16 @@
 }
 
 @media screen and (max-width: 2000px) {
+    .app__aboutus-content_knife img {
+        height: 1110px;
+    }
 
+}
 
+.app__aboutus-content_history p,
+.app__aboutus-content_about p {
+    margin: 4rem 0;
+    
 }
 
 /*need to check this all three media queries should be max width but source code has min width on the desktop media querie*/
