@@ -9,3 +9,7 @@ const MenuItem = ({title, price, tags}) => (
 );
 
 export default MenuItem;
+
+
+
+//not able to push to repo for some reason asfter starting this component
