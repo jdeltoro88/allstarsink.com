@@ -73,3 +73,11 @@
     }
     
 }
+
+@media screen and (max-width: 650px) {
+    .app__specialMenu-menu_heading {
+        font-size:  35px;
+        line-height: 48.5px;
+    }
+
+}
