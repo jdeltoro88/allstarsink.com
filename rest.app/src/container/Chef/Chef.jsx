@@ -1,17 +1,17 @@
 import React from 'react'
 import { SubHeading } from '../../components'
-import { image, images } from '../../constants'
+import { images } from '../../constants'
 import './Chef.css';
 
 
 
-const Chef = () (
+const Chef = () => (
   <div className='app__bg app__wrapper section__padding'>
     <div className= "app__wrapper_img app__wrapper_img-reverse">
       <img src={images.chef} alt="chef_image" />
       </div>
       <div className= 'app__wrapper-info'>
-        <Subheading title="chefs word"/>
+        <SubHeading title="chefs word"/>
         <h1 className="headtext__cormorant">What we believe in</h1>
 
         <div className='app__chef-content'>
@@ -23,10 +23,10 @@ const Chef = () (
             </div>
 
 
-               <div className="app__chef-sign">
+        <div className="app__chef-sign">
         <p>Kevin Luo</p>
         <p className="p__opensans">Chef & Founder</p>
-        <img src={images.sign} alt="sign_image" />
+        <img src={images.sign} alt="sign" />
       </div>
     </div>
   </div>
