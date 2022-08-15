@@ -1,8 +1,7 @@
- .app__specialMenu {
-     flex-direction: column;
-     background: var(--color-black);
- }
- 
+.app__specialMenu {
+    flex-direction: column;
+    background: var(--color-black);
+}
 
 .app__specialMenu-title {
     margin-bottom: 2rem;
@@ -11,8 +10,8 @@
 
 .app__specialMenu-menu {
     width: 100%;
-
     margin: 2rem 0;
+
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -22,17 +21,17 @@
 .app__specialMenu-menu_heading {
     font-family: var(--font-base);
     font-weight: 600;
-    font-size:45px;
+    font-size: 45px;
     line-height: 58.5px;
     letter-spacing: 0.04em;
     color: var(--color-white);
 }
 
-.app__specialMenu_wine,
+.app__specialMenu-menu_wine,
 .app__specialMenu-menu_cocktails {
-    flex:1;
+    flex: 1;
     width: 100%;
-    flex-direction:column;
+    flex-direction: column;
 }
 
 .app__specialMenu-menu_img {
@@ -42,26 +41,28 @@
 
 .app__specialMenu-menu_img img {
     width: 100%;
-    height:auto;
+    height: auto;
 }
 
-.app__specialMenu-menu_items {
+.app__specialMenu_menu_items {
     display: flex;
     flex-direction: column;
+
     margin: 2rem 0;
-    width: 100%
+    width: 100%;
 }
 
 @media screen and (min-width: 2000px) {
     .app__specialMenu-menu_img {
         width: 650px;
     }
+
     .app__specialMenu-menu_img img {
-        height: 920px
+        height: 920px;
     }
 }
 
-@media  screen and (max-width: 1150px) {
+@media screen and (max-width: 1150px) {
     .app__specialMenu-menu {
         flex-direction: column;
         align-items: center;
@@ -71,15 +72,17 @@
     .app__specialMenu-menu_img {
         margin: 3rem 0;
     }
-    
 }
 
 @media screen and (max-width: 650px) {
-    .app__specialMenu-menu_heading {
-        font-size:  35px;
-        line-height: 48.5px;
+    .app__specialMenu-menu_img {
+        width: 100%;
     }
 
+    .app__specialMenu-menu_heading {
+        font-size: 35px;
+        line-height: 48.5px;
+    }
 }
 
 /*we want to try an animation here on hover over items to show the cals?*/
