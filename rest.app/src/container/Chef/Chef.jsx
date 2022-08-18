@@ -19,7 +19,7 @@ const Chef = () => (
             <img src={images.quote} alt="quote_image"/>
             <p className='p__opensans'>Lorem ipsum dolor sit amet, consectetur adipisicing</p>
             </div>
-            <p classname='p__opensans'>Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+            <p className='p__opensans'>Lorem ipsum dolor sit amet, consectetur adipisicing</p>
             </div>
 
 
