@@ -3,7 +3,7 @@ import React from 'react';
 import './Intro.css';
 
 const Intro = () => (
-  <div>
+  <div className = " into__quip">
     Intro
   </div>
 );
