@@ -19,8 +19,8 @@
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    color: grey;
-     transition: height 0.4s;
+    border: 1px solid var(--color-golden);
+    cursor: pointer;
   
 }
 
